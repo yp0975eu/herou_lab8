@@ -12,9 +12,10 @@ var baseURL = 'https://api.nasa.gov/planetary/apod';
 
 function apodRequest(callback, today) {
 
+
     var queryParam = {};
-    var APIKEY = nasa_api_key;  // Make sure an environment variable is set, containing a valid APOD key
-    var APIKEY = 'cats pajamas';
+    var APIKEY = process.env.APOD_API_KEY;  // Make sure an environment variable is set, containing a valid APOD key
+
     if (today) {
         queryParam = { 'api_key' : APIKEY };
     }
