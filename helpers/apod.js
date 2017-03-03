@@ -14,7 +14,7 @@ function apodRequest(callback, today) {
 
     var queryParam = {};
     var APIKEY = nasa_api_key;  // Make sure an environment variable is set, containing a valid APOD key
-
+    var APIKEY = 'cats pajamas';
     if (today) {
         queryParam = { 'api_key' : APIKEY };
     }
